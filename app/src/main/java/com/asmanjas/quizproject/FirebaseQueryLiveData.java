@@ -46,7 +46,7 @@ public class FirebaseQueryLiveData extends LiveData<DataSnapshot> {
             handler.removeCallbacks(removeListener);
         }
         else {
-            query.addValueEventListener(listener);
+            query.addListenerForSingleValueEvent(listener);
         }
     }
 

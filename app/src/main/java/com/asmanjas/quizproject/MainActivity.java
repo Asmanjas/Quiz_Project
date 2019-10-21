@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         TestViewModel viewModel = new ViewModelProvider(this).get(TestViewModel.class);
 
-        LiveData<HotStockEntity> liveData = viewModel.getHotStockEntityMediatorLiveData();
+        LiveData<HotStockEntity> liveData =     viewModel.getHotStockEntityMediatorLiveData();
 
         liveData.observe(this, new Observer<HotStockEntity>() {
             @Override

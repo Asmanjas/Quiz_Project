@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.asmanjas.quizproject.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_aptitudeFragment"
+            app:destination="@id/aptitudeFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_generalEarthScienceFragment"
+            app:destination="@id/generalEarthScienceFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_geologyFragment"
+            app:destination="@id/geologyFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_geophysicsFragment"
+            app:destination="@id/geophysicsFragment" />
+        <action
+            android:id="@+id/action_nav_home_to_meteorologyFragment"
+            app:destination="@id/meteorologyFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.asmanjas.quizproject.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.asmanjas.quizproject.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.asmanjas.quizproject.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.asmanjas.quizproject.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.asmanjas.quizproject.ui.send.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+    <fragment
+        android:id="@+id/aptitudeFragment"
+        android:name="com.asmanjas.quizproject.ui.aptitude.AptitudeFragment"
+        android:label="aptitude_fragment"
+        tools:layout="@layout/aptitude_fragment" >
+        <action
+            android:id="@+id/action_aptitudeFragment_to_questionDisplayFragment"
+            app:destination="@id/questionDisplayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/generalEarthScienceFragment"
+        android:name="com.asmanjas.quizproject.ui.generalEarthScience.GeneralEarthScienceFragment"
+        android:label="general_earth_science_fragment"
+        tools:layout="@layout/general_earth_science_fragment" />
+    <fragment
+        android:id="@+id/geophysicsFragment"
+        android:name="com.asmanjas.quizproject.ui.geophysics.GeophysicsFragment"
+        android:label="geophysics_fragment"
+        tools:layout="@layout/geophysics_fragment" />
+    <fragment
+        android:id="@+id/geologyFragment"
+        android:name="com.asmanjas.quizproject.ui.geology.GeologyFragment"
+        android:label="geology_fragment"
+        tools:layout="@layout/geology_fragment" />
+    <fragment
+        android:id="@+id/meteorologyFragment"
+        android:name="com.asmanjas.quizproject.ui.meteorology.MeteorologyFragment"
+        android:label="meteorology_fragment"
+        tools:layout="@layout/meteorology_fragment" />
+    <fragment
+        android:id="@+id/questionDisplayFragment"
+        android:name="com.asmanjas.quizproject.ui.QuestionDisplay.QuestionDisplayFragment"
+        android:label="question_display_fragment"
+        tools:layout="@layout/question_display_fragment" />
+</navigation>
